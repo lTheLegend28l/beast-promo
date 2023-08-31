@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Countdown from "react-countdown";
-import { Player } from "video-react";
+import ReactPlayer from "react-player";
 import logo from "./logo.svg";
 import promovid from "./promovid.mp4";
 import "./App.css";
@@ -22,9 +22,12 @@ function App() {
     <section className="App">
       <div className="content text-center justify-center items-center flex flex-col w-[100vw] max-w-[100vw] h-[100vh] font-inter bg-black transition-colors duration-700">
         {video ? (
-          <Player className="w-[90vw]" onEnded={handleVideoEnd}>
-            <source src={promovid} />
-          </Player>
+          <ReactPlayer
+            height="100vh"
+            url={promovid}
+            onEnded={handleVideoEnd}
+            controls={true}
+          />
         ) : (
           <>
             <img src={logo} className="w-[50vw]" alt="logo" />
