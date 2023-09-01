@@ -39,11 +39,15 @@ function App() {
         ) : (
           <>
             <img src={logo} className="w-[50vw]" alt="logo" />
+            <div className="flex flex-row"></div>
+            <h1 className="font-lexend text-3xl font-bold mt-5">
+              website activates in
+            </h1>
             <Countdown
-              className="text-4xl font-bold mt-4 font-oswald"
+              className="text-6xl font-bold mt-3 ml-2 font-oswald"
               date={targetDate}
             />
-            <h1 className="text-2xl font-bold mt-3 tracking-normal leading-[2.25rem]">
+            <h1 className="text-2xl font-bold mt-3 tracking-normal font-lexend leading-[2.25rem]">
               9/7/23 mac cafe 8-9pm <br />
               physical fitness, elevated. <br />
               <a
