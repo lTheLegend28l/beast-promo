@@ -26,7 +26,7 @@ function App() {
 
   return (
     <section className="App">
-      <div className="content text-center justify-center items-center flex flex-col w-[100vw] max-w-[100vw] h-[100vh] font-inter bg-black transition-colors duration-700">
+      <div className="content text-center justify-center items-center flex flex-col w-[100vw] max-w-[100vw] h-[100vh] font-lexend bg-black transition-colors duration-700">
         {video ? (
           <ReactPlayer
             height="100vh"
@@ -41,13 +41,19 @@ function App() {
         ) : (
           <>
             <img src={logo} className="w-[50vw]" alt="logo" />
-            <Countdown className="text-4xl font-bold mt-4 " date={targetDate} />
-            <h1 className="text-2xl font-semibold mt-4 tracking-wider">
-              9/7 Mac Cafe 8 PM <br />
+            <Countdown
+              className="text-4xl font-bold mt-4 font-oswald"
+              date={targetDate}
+            />
+            <h1 className="text-2xl font-bold mt-4 tracking-normal">
+              9/7/23 mac cafe 8-9pm <br />
               <a
-                className="hover:text-blue-500 transition-all"
+                className="hover:text-blue-500 transition-all underline "
                 href="https://www.facebook.com/groups/tamsbeast">
-                Join. <Facebook className="inline mb-1" />
+                <button className="outline rounded-[.6rem] pl-3.5 pr-2 py-1 mt-3">
+                  join
+                  <Facebook className="inline mb-1" />
+                </button>
               </a>
             </h1>
           </>
