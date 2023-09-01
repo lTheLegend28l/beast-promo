@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Countdown from "react-countdown";
 import ReactPlayer from "react-player";
 import logo from "./logo.svg";
@@ -9,7 +9,7 @@ const targetDate = new Date("2023-09-07T20:00:00");
 
 function App() {
   const [video, setVideo] = useState(true);
-
+  const [playing, setPlaying] = useState(false);
   const handleVideoEnd = () => {
     setVideo(false);
     setTimeout(() => {
@@ -17,6 +17,12 @@ function App() {
       if (content) content.classList.add("fade-in");
     }, 1000);
   };
+
+  useEffect(() => {
+    setTimeout(() => {
+      setPlaying(true);
+    }, 1000);
+  }, []);
 
   return (
     <section className="App">
@@ -27,6 +33,10 @@ function App() {
             url={promovid}
             onEnded={handleVideoEnd}
             controls={true}
+            playing={playing}
+            light={
+              <img src="https://example.com/thumbnail.png" alt="Thumbnail" />
+            }
           />
         ) : (
           <>
