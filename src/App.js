@@ -43,16 +43,18 @@ function App() {
               className="text-4xl font-bold mt-4 font-oswald"
               date={targetDate}
             />
-            <h1 className="text-2xl font-bold mt-4 tracking-normal">
+            <h1 className="text-2xl font-bold mt-3 tracking-normal leading-[2.25rem]">
               9/7/23 mac cafe 8-9pm <br />
+              physical fitness, elevated. <br />
               <a
                 className="hover:text-blue-500 transition-all underline "
                 href="https://www.facebook.com/groups/tamsbeast">
-                <button className="outline rounded-[.6rem] pl-3.5 pr-2 py-1 mt-3">
+                <button className="outline rounded-[.6rem] pl-3.5 pr-2 py-1 mt-4">
                   join
                   <Facebook className="inline mb-1" />
                 </button>
               </a>
+              <br />
             </h1>
           </>
         )}
