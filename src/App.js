@@ -4,7 +4,7 @@ import ReactPlayer from "react-player";
 import logo from "./logo.svg";
 import promovid from "./promovid.mp4";
 import "./App.css";
-
+import { Facebook } from "lucide-react";
 const targetDate = new Date("2023-09-07T20:00:00");
 
 function App() {
@@ -43,7 +43,12 @@ function App() {
             <img src={logo} className="w-[50vw]" alt="logo" />
             <Countdown className="text-4xl font-bold mt-4 " date={targetDate} />
             <h1 className="text-2xl font-semibold mt-4 tracking-wider">
-              9/7 Mac Cafe 8 PM
+              9/7 Mac Cafe 8 PM <br />
+              <a
+                className="hover:text-blue-500 transition-all"
+                href="https://www.facebook.com/groups/tamsbeast">
+                Join our facebook! <Facebook className="inline mb-1" />
+              </a>
             </h1>
           </>
         )}
