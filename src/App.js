@@ -47,7 +47,7 @@ function App() {
               <a
                 className="hover:text-blue-500 transition-all"
                 href="https://www.facebook.com/groups/tamsbeast">
-                Join our facebook! <Facebook className="inline mb-1" />
+                Join. <Facebook className="inline mb-1" />
               </a>
             </h1>
           </>
