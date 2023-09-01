@@ -47,9 +47,17 @@ function App() {
               9/7/23 mac cafe 8-9pm <br />
               physical fitness, elevated. <br />
               <a
-                className="hover:text-blue-500 transition-all underline "
-                href="https://www.facebook.com/groups/tamsbeast">
+                className="transition-color hover:text-blue-500 transition-colors "
+                target="_blank"
+                href="https://calendar.google.com/calendar/event?action=TEMPLATE&amp;tmeid=NHNxczd0anM1dDBrdjdlMnRpaTNpbGl2NmUgcHJhZHl1bi50YW5kcmFAbQ&amp;tmsrc=pradyun.tandra%40gmail.com">
                 <button className="outline rounded-[.6rem] pl-3.5 pr-2 py-1 mt-4">
+                  add to calendar
+                </button>
+              </a>
+              <a
+                className="transition-color hover:text-blue-500 transition-colors"
+                href="https://www.facebook.com/groups/tamsbeast">
+                <button className="outline rounded-[.6rem] pl-3.5 pr-2 py-1 mt-4 ml-4">
                   join
                   <Facebook className="inline mb-1" />
                 </button>
