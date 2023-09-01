@@ -34,9 +34,7 @@ function App() {
             onEnded={handleVideoEnd}
             controls={true}
             playing={playing}
-            light={
-              <img src="https://example.com/thumbnail.png" alt="Thumbnail" />
-            }
+            light={<h1>Press</h1>}
           />
         ) : (
           <>
